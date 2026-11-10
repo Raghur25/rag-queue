@@ -1,0 +1,16 @@
+[project]
+name = "rag-queue"
+version = "0.1.0"
+description = "FastAPI + RQ (Valkey) background worker that answers questions over a Qdrant RAG index"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.162.2",
+    "langchain-openai>=1.7.4",
+    "langchain-qdrant>=1.1.0",
+    "openai>=3.46.0",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+    "rq>=3.0.0",
+    "uvicorn>=0.54.0",
+]

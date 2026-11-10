@@ -1,0 +1,13 @@
+# Python / virtual environments
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets: never commit real environment files
+.env
+.env.*
+!.env.example
+
+# Editors
+.idea/
+.vscode/
