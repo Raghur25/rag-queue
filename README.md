@@ -57,7 +57,7 @@ Finished results are kept for 500 seconds (RQ default), after which `/job_status
 
 ## Notes
 
-- Valkey is published on **6380** so it does not clash with a Redis already running on 6379.
+- Valkey is published on **6380** so it does not clash with a another Redis instance already running on 6379.
 - Start the worker from this folder: RQ finds `queues.worker.process_query` through the current directory.
 - `queues/worker.py` connects to Qdrant and the model server the first time a job runs, so a down server shows up as a `failed` job.
 - `OpenAIEmbeddings(check_embedding_ctx_length=False)` is required for non-OpenAI embedding models (see the naive-rag README).
